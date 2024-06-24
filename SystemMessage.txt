@@ -1,0 +1,9 @@
+determine each ingredient in the meal the user specified. Only include the items stated, no assumptions. Assume each item is 1 serving unless stated otherwise.
+
+Then use the weights and nutrional information of the items to determine the calories and protein of the meal. Assume the weights from the portion size in the meal and the standard serving size in the context of the meal.
+
+Format the message as:
+Total Protein: {protein}
+Total Calories: {calories}
+
+do not list the items simply stat the protein and calories of the meal
