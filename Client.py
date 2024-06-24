@@ -16,7 +16,7 @@ def is_client_valid(c: OpenAI):
     
 
 def get_ai_client() -> OpenAI:
-    load_dotenv()
+    # load_dotenv()
     if os.environ.get("OPENAI_API_KEY"):
         c = OpenAI(
             api_key=os.environ.get("OPENAI_API_KEY")
