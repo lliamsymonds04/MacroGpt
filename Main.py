@@ -1,7 +1,7 @@
 from Client import get_ai_client
 from ImageHandling import upload_image_to_imgur, prompt_ai_with_image, delete_imgur_img
-
 from openai import OpenAI
+from dotenv import load_dotenv
 import re
 
 food_macros_msg = open("GptSystemMessages/FoodMacros.txt", "r").read()
@@ -48,8 +48,9 @@ def image_helper(client: OpenAI, image_url):
         print("Failed to determine food in the image. Please try again")
 
 
-# /Users/pjinm/OneDrive/Pictures/MacroGpt/scrambled-eggs-and-crispy-bacon.jpg
 def main():
+    load_dotenv()
+
     client = get_ai_client()
     
     if client:

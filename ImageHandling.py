@@ -6,18 +6,6 @@ from openai import OpenAI
 food_image_msg = open("GptSystemMessages/FoodImage.txt", "r").read()
 
 
-# Function to upload image to Imgur
-# def upload_image_to_imgur(image_path, client_id):
-#     url = "https://api.imgur.com/3/upload"
-#     headers = {"Authorization": f"Client-ID {client_id}"}
-#     with open(image_path, "rb") as image_file:
-#         data = {"image": image_file.read()}
-#     response = requests.post(url, headers=headers, files=data)
-#     if response.status_code == 200:
-#         return response.json()["data"]["link"]
-#     else:
-#         response.raise_for_status()
-
 imgur_url = "https://api.imgur.com/3/image"
 image_types = ["jpeg", "jpg", "png"]
 

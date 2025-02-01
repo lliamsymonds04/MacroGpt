@@ -1,6 +1,5 @@
 from openai import OpenAI
 import os
-from dotenv import load_dotenv
 
 def is_client_valid(c: OpenAI):
     try:
